@@ -28,7 +28,7 @@ module.exports = function(homebridge) {
     Characteristic = homebridge.hap.Characteristic;
     UUIDGen = homebridge.hap.uuid;
     
-    homebridge.registerPlatform("homebridge-mi-aqara", "MiAqaraPlatform", MiAqaraPlatform, true);
+    homebridge.registerPlatform("homebridge-mi-aqara-kiwi", "MiAqaraPlatform", MiAqaraPlatform, true);
 }
 
 function MiAqaraPlatform(log, config, api) {
@@ -533,7 +533,7 @@ MiAqaraPlatform.prototype.sendWriteCommandWithoutFeedback = function(deviceSid, 
 
 MiAqaraPlatform.prototype.registerPlatformAccessories = function(accessories) {
     var that = this;
-    that.api.registerPlatformAccessories("homebridge-mi-aqara", "MiAqaraPlatform", accessories);
+    that.api.registerPlatformAccessories("homebridge-mi-aqara-kiwi", "MiAqaraPlatform", accessories);
     accessories.forEach(function(accessory, index, arr) {
         that.log.info("create accessory - UUID: " + accessory.UUID);
         that.AccessoryUtil.add(accessory);
@@ -542,7 +542,7 @@ MiAqaraPlatform.prototype.registerPlatformAccessories = function(accessories) {
 
 MiAqaraPlatform.prototype.unregisterPlatformAccessories = function(accessories) {
     var that = this;
-    that.api.unregisterPlatformAccessories("homebridge-mi-aqara", "MiAqaraPlatform", accessories);
+    that.api.unregisterPlatformAccessories("homebridge-mi-aqara-kiwi", "MiAqaraPlatform", accessories);
     accessories.forEach(function(accessory, index, arr) {
         that.log.info("delete accessory - UUID: " + accessory.UUID);
         that.AccessoryUtil.remove(accessory);
