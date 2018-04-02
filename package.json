@@ -6,13 +6,13 @@
   "keywords": [
     "homebridge-plugin"
   ],
-  "author": "YinHang",
+  "author": "wuqiyu007",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YinHangCode/homebridge-mi-aqara"
+    "url": "https://github.com/wuqiyu007/homebridge-mi-aqara-kiwi"
   },
   "bugs": {
-    "url": "https://github.com/YinHangCode/homebridge-mi-aqara/issues"
+    "url": "https://github.com/wuqiyu007/homebridge-mi-aqara-kiwi/issues"
   },
   "engines": {
     "node": ">=0.12.0",

@@ -59,7 +59,7 @@ function MiAqaraPlatform(log, config, api) {
     
     this.log.info("**************************************************************");
     this.log.info("           MiAqaraPlatform v"+packageFile.version+" By YinHang");
-    this.log.info("  GitHub: https://github.com/YinHangCode/homebridge-mi-aqara  ");
+    this.log.info("  GitHub: https://github.com/wuqiyu007/homebridge-mi-aqara-kiwi  ");
     this.log.info("                                         QQ Group: 107927710  ");
     this.log.info("**************************************************************");
     this.log.info("start success...");
